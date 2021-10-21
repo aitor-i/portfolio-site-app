@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding-top: 40vh;
+  height: 100vh;
   .home {
     letter-spacing: 0.3rem;
     height: 100%;

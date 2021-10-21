@@ -3,6 +3,7 @@ import "./App.css";
 import { Wrapper } from "./App.styled";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ProjectCard from "./components/ProjectCard/ProjectCard";
 import Home from "./pages";
 import About from "./pages/about";
 import Contact from "./pages/contact";
