@@ -12,6 +12,7 @@ export const NavLinks: React.CSSProperties | any = styled(NavLink)`
   text-decoration: none;
   color: #fff;
   font-size: 24px;
+  letter-spacing: 0.3rem;
 
   &.active {
     color: #61dafb;
