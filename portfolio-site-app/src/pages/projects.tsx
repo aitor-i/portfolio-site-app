@@ -4,9 +4,9 @@ import { Wrapper } from "./projects.styled";
 import projectsData from "../api/projectsData";
 
 //types
-import { props } from "../components/ProjectCard/ProjectCard";
+import { Props } from "../components/ProjectCard/ProjectCard";
 
-const obj: any = {
+const obj: Props = {
   name: "brutedict",
   link: "!#",
   linkTitle: "Github",
@@ -21,10 +21,10 @@ const Projects = () => {
     <Wrapper>
       <div className="title">My Projects</div>
       <div className="container">
-        {/* {projectsData.map((x) => (
-          <ProjectCard props={projectsData[0]} />
-        ))} */}
-        <ProjectCard props={obj} />
+        {projectsData.map((x) => (
+          <ProjectCard props={x} />
+        ))}
+        {/* <ProjectCard props={obj} /> */}
       </div>
     </Wrapper>
   );
