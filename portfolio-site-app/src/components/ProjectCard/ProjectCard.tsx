@@ -1,10 +1,10 @@
 import React from "react";
 import { Wrapper } from "./ProjectCard.styled";
 
-type CardProps = {
-  props: Props;
+type Props = {
+  props: ProjectCardType;
 };
-export type Props = {
+export type ProjectCardType = {
   name: string;
   link: string;
   linkTitle: string;
@@ -13,7 +13,7 @@ export type Props = {
   description: string;
 };
 
-const ProjectCard: React.FC<CardProps> = ({ props }) => {
+const ProjectCard: React.FC<Props> = ({ props }) => {
   return (
     <Wrapper>
       <div className="card">

@@ -1,12 +1,6 @@
-type props = {
-  name: string;
-  link: string;
-  linkTitle: string;
-  img: string;
-  imgAlt: string;
-  description: string;
-};
-const projectsData: Array<props> = [
+import { ProjectCardType } from "../components/ProjectCard/ProjectCard";
+
+const projectsData: Array<ProjectCardType> = [
   {
     name: "brutedict",
     link: "!#",
