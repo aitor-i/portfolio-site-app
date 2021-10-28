@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
       <Nav>
         <Bars />
         <NavMenu>
-          <NavLinks to="/home" activeStyle>
+          <NavLinks exact to="/" activeStyle>
             <div className="nav-title">Home</div>
           </NavLinks>
 
