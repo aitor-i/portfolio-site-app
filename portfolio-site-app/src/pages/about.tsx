@@ -1,18 +1,23 @@
 import React from "react";
-import { Wrapper } from "./about.tyled";
+import { ThemeProvider } from "styled-components";
+
+import { theme } from "../theme";
+import { Wrapper } from "./about.styled";
+import AboutCard from "../components/AboutCard/AboutCard";
+
 const About = () => {
   return (
-    <Wrapper>
-      <div className="about-card">
-        <div className="header">
-          <div className="header-title">Chemistry Degree</div>
-          <div className="header-academy">UPV/EHU</div>
+    <ThemeProvider theme={theme}>
+      <Wrapper>
+        <div className="title">Education</div>
+        <div className="container">
+          <AboutCard />
+          <AboutCard />
+          <AboutCard />
+          <AboutCard />
         </div>
-        <div className="description">
-          Chemistry degree specialization on polymer science
-        </div>
-      </div>
-    </Wrapper>
+      </Wrapper>
+    </ThemeProvider>
   );
 };
 
