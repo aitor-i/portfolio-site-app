@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
     text-align: center;
     font-size: 2rem;
     align-items: center;
-    color: white;
+    color: ${(props) => props.theme.white};
     &__description {
       padding-top: 5px;
     }
@@ -20,9 +20,9 @@ export const Wrapper = styled.div`
       justify-content: center;
       font-size: 3rem;
       padding: 10px;
-      border-bottom: 2px solid #fff;
+      border-bottom: 2px solid ${(props) => props.theme.white};
       &-first {
-        color: #61dafb;
+        color: ${(props) => props.theme.primaryColor};
         margin-right: 10px;
       }
     }

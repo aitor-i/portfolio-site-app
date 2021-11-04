@@ -1,8 +1,8 @@
 import React from "react";
-import ProjectCard from "../components/ProjectCard/ProjectCard";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Wrapper } from "./projects.styled";
 //Data
-import projectsData from "../api/projectsData";
+import projectsData from "../../api/projectsData";
 
 const Projects = () => {
   return (

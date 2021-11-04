@@ -3,15 +3,15 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   .card {
     margin: 7px;
-    background-color: #3e4249;
+    background-color: ${(props) => props.theme.lightBackgroundColor};
     letter-spacing: 0rem;
     width: 400px;
     height: 420px;
-    border: 2px solid #212121;
+    border: 2px solid ${(props) => props.theme.black};
     display: flex;
     flex-direction: column;
     border-radius: 7px;
-    color: #f2f2f2;
+    color: ${(props) => props.theme.white};
 
     &__header {
       display: flex;
@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
         letter-spacing: 0.3rem;
         padding-right: 25%;
         font-size: 3rem;
-        color: #61dafb;
+        color: ${(props) => props.theme.primaryColor};
       }
       &-link {
         padding-right: 5%;
@@ -45,10 +45,10 @@ export const Wrapper = styled.div`
   }
   a {
     text-decoration: none;
-    color: #f2f2f2;
+    color: ${(props) => props.theme.white};
 
     &:hover {
-      color: #61dafb;
+      color: ${(props) => props.theme.primaryColor};
     }
   }
 `;

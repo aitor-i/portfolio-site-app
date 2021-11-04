@@ -1,14 +1,22 @@
 export interface ThemeType {
-  primaryColor: string;
-  secondaryColor: string;
-  lightSecondaryColor: string;
-  white: string;
-  black: string;
+  primaryColor?: string;
+  backgroundColor?: string;
+  lightBackgroundColor?: string;
+  white?: string;
+  black?: string;
+  textExtraSmall?: string;
+  textSmall?: string;
+  textMedium?: string;
+  textBig?: string;
+  textVeryBig?: string;
+  letterSpacingSmall?: string;
+  letterSpacingMedium?: string;
+  letterSpacingBig?: string;
 }
 export const theme: ThemeType = {
   primaryColor: "#61dafb",
-  secondaryColor: " #282c34",
-  lightSecondaryColor: "#3e4249",
+  backgroundColor: " #282c34",
+  lightBackgroundColor: "#3e4249",
   white: "#f2f2f2",
   black: " #212121",
 };

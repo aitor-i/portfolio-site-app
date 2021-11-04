@@ -10,17 +10,17 @@ export const Nav = styled.nav``;
 // **** CHECK PROPERTIES ****
 export const NavLinks: React.CSSProperties | any = styled(NavLink)`
   text-decoration: none;
-  color: #fff;
+  color: ${(props) => props.theme.white};
   font-size: 24px;
   letter-spacing: 0.3rem;
 
   &.active {
-    color: #61dafb;
+    color: ${(props) => props.theme.primaryColor};
   }
 `;
 export const Bars = styled(FaBars)`
   display: none;
-  color: #000;
+  color: ${(props) => props.theme.black};
 
   @media screen and (max-width: 768px) {
     display: block;

@@ -1,12 +1,9 @@
 import styled from "styled-components";
-import { theme } from "../../theme";
-
-const { primaryColor, lightSecondaryColor, white } = theme;
 
 export const Wrapper = styled.div`
   .about-card {
-    border: 2px solid ${primaryColor};
-    background-color: ${lightSecondaryColor};
+    border: 2px solid ${(props) => props.theme.primaryColor};
+    background-color: ${(props) => props.theme.lightBackgroundColor};
     width: 80vw;
     align-self: auto;
     padding: 7px;
@@ -16,21 +13,21 @@ export const Wrapper = styled.div`
     &-title {
       font-size: 24px;
       letter-spacing: 0.2rem;
-      color: ${primaryColor};
-      border-bottom: 1px solid ${white};
+      color: ${(props) => props.theme.primaryColor};
+      border-bottom: 1px solid ${(props) => props.theme.white};
     }
     &-academy {
       font-size: 20px;
       letter-spacing: 0.2rem;
       font-style: italic;
-      color: ${white};
+      color: ${(props) => props.theme.white};
       padding-top: 5px;
     }
   }
   .description {
     font-size: 16px;
     letter-spacing: 0.1rem;
-    color: ${white};
+    color: ${(props) => props.theme.white};
     padding-top: 5px;
   }
 `;
