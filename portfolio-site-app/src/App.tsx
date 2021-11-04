@@ -12,6 +12,12 @@ import "./reset.css";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 
+if (process.env.NODE_ENV === "development") {
+  const { worker } = require("./mocks/browser");
+
+  worker.start();
+}
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
