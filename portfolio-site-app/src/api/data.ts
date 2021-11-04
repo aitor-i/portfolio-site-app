@@ -1,6 +1,6 @@
 import { ProjectCardType } from "../components/ProjectCard/ProjectCard";
 
-const projectsData: Array<ProjectCardType> = [
+export const projectsData: Array<ProjectCardType> = [
   {
     name: "brutedict",
     link: "!#",
@@ -26,5 +26,3 @@ const projectsData: Array<ProjectCardType> = [
     description: "Lorem ipsum description",
   },
 ];
-
-export default projectsData;
