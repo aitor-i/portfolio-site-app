@@ -1,10 +1,18 @@
-import React from "react";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import { useState, useEffect } from "react";
+import { ProjectCardType } from "../../components/ProjectCard/ProjectCard";
 import { Wrapper } from "./projects.styled";
-//Data
-import projectsData from "../../api/projectsData";
+
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 const Projects = () => {
+  const [projectsData, setProjectsData] = useState<Array<ProjectCardType>>([]);
+
+  useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => setProjectsData(data));
+  }, []);
+
   return (
     <Wrapper>
       <div className="title">My Projects</div>

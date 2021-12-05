@@ -3,7 +3,6 @@ import "./App.css";
 import { Wrapper } from "./App.styled";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ProjectCard from "./components/ProjectCard/ProjectCard";
 import Home from "./pages/home";
 import About from "./pages/about/about";
 import Contact from "./pages/contact/contact";
@@ -11,12 +10,6 @@ import Projects from "./pages/projects/projects";
 import "./reset.css";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
-
-if (process.env.NODE_ENV === "development") {
-  const { worker } = require("./mocks/browser");
-
-  worker.start();
-}
 
 function App() {
   return (
